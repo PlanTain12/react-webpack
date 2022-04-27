@@ -1,0 +1,37 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "react-webpack template",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "dev": "NODE_ENV=development webpack serve --config webpack.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "build:dev": "NODE_ENV=development webpack --config webpack.config.js",
+    "build:watch": "NODE_ENV=development node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --watch"
+  },
+  "author": "PlanTain12",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
